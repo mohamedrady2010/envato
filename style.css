@@ -1,0 +1,529 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: black;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #0000006c;
+  color: white;
+}
+.nav div {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.span {
+  color: #15a915e3;
+}
+.nav button {
+  background-color: #15a915e3;
+  color: white;
+  width: 70px;
+  border: none;
+  height: 30px;
+  border-radius: 3px;
+  margin-right: 20px;
+}
+.nav button:hover {
+  opacity: 0.9;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000e0;
+  color: white;
+  height: 100px;
+}
+nav ul {
+  margin-left: 200px;
+}
+nav ul li {
+  display: inline;
+  color: white;
+  list-style: none;
+  margin-left: 20px;
+}
+.fa-magnifying-glass {
+  margin-right: 50px;
+  color: #5cd2b9;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+nav ul li a:hover {
+  border-bottom: 3px solid #5cd2b9;
+}
+.pa {
+  margin-left: 150px;
+}
+.pa h1 {
+  color: #5cd2b9;
+  font-size: 35px;
+}
+.pa p {
+  letter-spacing: 10px;
+  font-size: 8px;
+}
+.a {
+  background-color: black;
+  height: 600px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.a img {
+  position: absolute;
+  right: 0;
+}
+.par {
+  position: absolute;
+  color: white;
+  top: 30%;
+  left: 15%;
+}
+.par hr {
+  margin: 20px 0px;
+  width: 10%;
+}
+.par .one {
+  color: #5cd2b9;
+  font-size: 20px;
+  letter-spacing: 3px;
+  margin-bottom: 30px;
+}
+.par h2 {
+  font-size: 50px;
+}
+.par span {
+  color: #5cd2b9;
+}
+.two {
+  font-size: 15px;
+  color: #ffffffab;
+}
+.icon {
+  background-color: #5cd2b9;
+  color: white;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  border-radius: 50%;
+  position: relative;
+  right: -200px;
+  top: 175px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon::after,
+.icon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  border-radius: 50%;
+  border: 3px solid;
+  transition: 0.5s;
+}
+.icon::after {
+  border: 3px solid;
+  border-color: #5cd2b9 #5cd2b9 #5cd2b9 transparent;
+}
+
+.icon::before {
+  transform: scale(1.1);
+  border-color: #5cd2b99c transparent #5cd2b99c #5cd2b99c;
+  transition-delay: 0.5s;
+}
+
+.icon:hover::after {
+  transform: rotate(360deg);
+}
+
+.icon:hover:before {
+  transform: scale(1.1) rotate(360deg);
+}
+.ab {
+  color: white;
+  position: absolute;
+  bottom: 114px;
+  left: 260px;
+}
+.a img {
+  background-image: linear-gradient(to left, #5cd2b95d, #5cd2b900);
+}
+.b {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  height: 600px;
+  color: white;
+  position: relative;
+}
+.para p:first-of-type {
+  color: #5cd2b9;
+  position: absolute;
+  top: 20%;
+  left: 15%;
+}
+.para h2 {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
+.para hr {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  width: 5%;
+}
+.para p:last-of-type {
+  position: absolute;
+  left: 15%;
+  top: 37%;
+}
+.para span {
+  position: absolute;
+  left: 170px;
+  color: #5cd2b9;
+}
+.para button {
+  position: absolute;
+  background-color: #5cd2b9;
+  color: white;
+  border: none;
+  font-size: bold;
+  padding: 15px;
+  left: 15%;
+  opacity: 0.7;
+}
+.para button:hover {
+  opacity: 1;
+}
+.images {
+  position: relative;
+  left: -250px;
+  top: -250px;
+}
+.one0 {
+  height: 200px;
+  background-color: #5cd2b90c;
+  position: absolute;
+  left: -300px;
+}
+.one0 img {
+  position: absolute;
+  left: 35%;
+  width: 100px;
+}
+.one0 h3 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+.one0 p {
+  position: relative;
+  top: 150px;
+  font-size: 15px;
+  padding: 10px;
+}
+.two0 {
+  position: absolute;
+  height: 200px;
+  background-image: linear-gradient(to top, #5cd2b95d, #5cd2b900);
+  top: 10px;
+  width: 245px;
+  left: -40px;
+}
+
+.two0 img {
+  position: absolute;
+  left: 35%;
+  width: 100px;
+}
+.two0 h3 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+.two0 p {
+  position: relative;
+  top: 150px;
+  font-size: 15px;
+  padding: 8px;
+}
+
+.three {
+  position: absolute;
+  height: 200px;
+  background-image: linear-gradient(to top, #5cd2b95d, #5cd2b900);
+  left: -300px;
+  top: 220px;
+}
+
+.three img {
+  position: absolute;
+  left: 35%;
+  width: 100px;
+}
+.three h3 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+.three p {
+  position: relative;
+  top: 150px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.four {
+  position: absolute;
+  height: 200px;
+  top: 225px;
+  width: 245px;
+  background-color: #5cd2b90c;
+  left: -50px;
+}
+
+.four img {
+  position: absolute;
+  left: 35%;
+  width: 100px;
+}
+.four h3 {
+  position: absolute;
+  left: 30%;
+  top: 50%;
+}
+.four p {
+  position: relative;
+  top: 150px;
+  padding: 8px;
+  font-size: 15px;
+}
+.one0,
+.two0,
+.three,
+.four {
+  opacity: 0.5;
+}
+.one0:hover {
+  opacity: 1;
+}
+.two0:hover {
+  opacity: 1;
+}
+.three:hover {
+  opacity: 1;
+}
+.four:hover {
+  opacity: 1;
+}
+.c {
+  background-color: #000000d6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.pr {
+  position: relative;
+  left: -50px;
+}
+.pr h3 {
+  color: #5cd2b9;
+  font-size: 20px;
+}
+.pr p:first-of-type {
+  font-size: 30px;
+  word-spacing: 5px;
+}
+.pr hr {
+  width: 10%;
+  margin: 20px 0px;
+}
+.cl {
+  position: absolute;
+  top: 185px;
+  left: 210px;
+}
+.lo {
+  margin-bottom: 20px;
+}
+.mod {
+  position: absolute;
+  left: 75px;
+  top: 202px;
+}
+.mode {
+  position: absolute;
+  left: 75px;
+  top: 220px;
+}
+.cle {
+  position: absolute;
+  top: 202px;
+  left: 285px;
+}
+.clea {
+  position: absolute;
+  left: 287px;
+  top: 220px;
+}
+.pr span {
+  color: #5cd2b9;
+}
+.c img {
+  opacity: 0.5;
+}
+.c img:hover {
+  opacity: 1;
+}
+.img {
+  margin-left: 80px;
+}
+.d {
+  position: relative;
+  background-color: black;
+  height: 111px;
+  color: white;
+}
+.head {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  top: -91px;
+}
+.da {
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  top: -90px;
+  height: 324px;
+  background-image: linear-gradient(to left, #5cd2b911, #5cd2b960);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.e {
+  background-color: black;
+  width: 100%;
+  height: 800px;
+  color: white;
+  margin-bottom: 50px;
+}
+.first {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.sec {
+  width: 500px;
+}
+.sec p:first-of-type {
+  color: #5cd2b9;
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+.sec h3 {
+  font-size: 25px;
+}
+.sec hr {
+  width: 10%;
+  margin: 20px 0px;
+  border-color: #5cd2b9;
+}
+.sec h3 span {
+  color: #5cd2b9;
+}
+.sec :nth-child(4) {
+  color: #cccccc5e;
+  margin-bottom: 70px;
+}
+
+.sec :nth-child(5) {
+  margin-bottom: 10px;
+}
+.ff {
+  position: relative;
+  bottom: 107px;
+  left: 168px;
+  color: #5cd2b9;
+}
+
+.fff {
+  position: relative;
+  bottom: 79px;
+  left: 150px;
+  color: #5cd2b9;
+}
+.ges {
+  margin-left: 260px;
+}
+
+.daa {
+  background-color: transparent;
+  z-index: 1;
+  position: absolute;
+  top: -90px;
+  height: 324px;
+  background-image: linear-gradient(to right, #5cd2b911, #5cd2b960);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.f {
+  width: 100%;
+  height: 500px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.last span {
+  color: #5cd2b9;
+}
+.last h1 {
+  font-size: 40px;
+}
+.o1 {
+  position: relative;
+  bottom: -50%;
+  left: -50%;
+}
+.o2 {
+  position: relative;
+  bottom: -60%;
+  left: -50%;
+}
+.con {
+  position: relative;
+  top: 250px;
+}
+form {
+  color: white;
+  display: block;
+}
